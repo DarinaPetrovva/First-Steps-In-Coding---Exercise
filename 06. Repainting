@@ -1,0 +1,23 @@
+using System;
+
+namespace _14052023
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int nailon = int.Parse(Console.ReadLine());
+            int boq = int.Parse(Console.ReadLine());
+            int razreditel = int.Parse(Console.ReadLine());
+            int chasoveMaistori = int.Parse(Console.ReadLine());
+
+            double sumaMateriali = ((nailon + 2) * 1.5) + 
+            ((boq + boq * 0.1) * 14.50) + razreditel * 5 + 0.4;
+
+            double sumMaistori = (sumaMateriali * 0.3) * chasoveMaistori;
+
+            double finalnaSuma = sumaMateriali + sumMaistori;
+            Console.WriteLine(finalnaSuma);
+        }
+    }
+}
