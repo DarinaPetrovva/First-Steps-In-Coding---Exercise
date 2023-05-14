@@ -1,0 +1,22 @@
+using System;
+
+namespace _14052023
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int pens = int.Parse(Console.ReadLine());
+            int markers = int.Parse(Console.ReadLine());
+            int cleanser = int.Parse(Console.ReadLine());
+            int percentDiscount = int.Parse(Console.ReadLine());
+
+            double sum = pens * 5.8 + markers * 7.2 + cleanser * 1.2;
+            double discount = sum * (percentDiscount * 0.01);
+            double finalSum = sum - discount;
+
+            Console.WriteLine(finalSum);
+     
+        }
+    }
+}
