@@ -1,0 +1,18 @@
+using System;
+
+namespace _14052023
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double depSum = double.Parse(Console.ReadLine());
+            int depSrok = int.Parse(Console.ReadLine());
+            double procentLihven = double.Parse(Console.ReadLine());
+
+            double krSum = depSum + depSrok * ((depSum * (procentLihven/100)) / 12);
+
+            Console.WriteLine(krSum);
+        }
+    }
+}
