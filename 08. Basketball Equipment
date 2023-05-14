@@ -1,0 +1,21 @@
+using System;
+
+namespace _14052023
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int paymentForYear = int.Parse(Console.ReadLine());
+
+            double sneakers = paymentForYear - (paymentForYear * 0.4);
+            double outfit = sneakers - (sneakers * 0.2);
+            double ball = outfit * 0.25;
+            double accsessories = ball * 0.2;
+
+            double sum = paymentForYear + sneakers + outfit + ball + accsessories;
+
+            Console.WriteLine(sum);
+        }
+    }
+}
