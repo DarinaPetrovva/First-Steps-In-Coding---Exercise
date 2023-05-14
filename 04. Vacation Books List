@@ -1,0 +1,18 @@
+using System;
+
+namespace _14052023
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int brStr = int.Parse(Console.ReadLine());
+            int strZa1Chas = int.Parse(Console.ReadLine());
+            int brDni = int.Parse(Console.ReadLine());
+
+            int brChasoveDnevno = (brStr / strZa1Chas) / brDni;
+            Console.WriteLine(brChasoveDnevno);
+
+        }
+    }
+}
