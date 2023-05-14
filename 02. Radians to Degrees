@@ -1,0 +1,16 @@
+using System;
+
+namespace _14052023
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double radians = double.Parse(Console.ReadLine());
+
+            double gr = radians * 180 / Math.PI;
+
+            Console.WriteLine(gr);
+        }
+    }
+}
