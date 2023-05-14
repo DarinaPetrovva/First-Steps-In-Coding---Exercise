@@ -1,0 +1,20 @@
+using System;
+
+namespace _14052023
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int chickenMenu = int.Parse(Console.ReadLine());
+            int fishMenu = int.Parse(Console.ReadLine());
+            int vegMenu = int.Parse(Console.ReadLine());
+            double delivery = 2.5;
+            double sum = chickenMenu * 10.35 + fishMenu * 12.4 + vegMenu * 8.15;
+            double dessert = sum * 0.2;
+
+            double finalSum = sum + dessert + delivery;
+            Console.WriteLine(finalSum);
+        }
+    }
+}
